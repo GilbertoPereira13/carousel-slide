@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Exo 2', sans-serif;;
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#body{
+    background-image:url('../img/1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    transition: all 1.5s;
+}
+#carousel{
+    width: 50vw;
+    height: 80vh;
+    display: flex;
+    justify-content: space-between;
+}
+.carouselBtn{
+    width: 5vw;
+    display: flex;
+    color: transparent;
+    cursor: pointer;
+    font-size: 2em;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+.carouselBtn:hover{
+    color: rgb(42, 142, 248);
+    background-color: rgba(245, 245, 245, 0.492);
+    transition: 1.5s;
+}
+#carouselItems{
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    display: flex;
+    overflow: hidden;
+    box-shadow: -15px 20px 20px 250px #0000004e;
+}
+.item:first-child{
+    margin-left: -100%;
+}
+#carouselItems > img{
+    width: inherit;
+    height: inherit;
+    transition: all 1.5s;
+}
+h3{
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #d9d2c9;
+    z-index: 2;
+}
